@@ -1,0 +1,17 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background: black;
+}
+
+#container
+{
+    width: 100%;
+    text-align: center;
+}
+
+#game
+{
+    display: inline;
+}
