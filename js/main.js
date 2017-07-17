@@ -105,7 +105,7 @@ function clear() {
 var t = 0
 function update() {
     t += 1
-    if(t % 80 == 0) {
+    if(t % 50 == 0) {
         t = 0
         notes.addNote()
     }
