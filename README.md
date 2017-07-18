@@ -1,5 +1,5 @@
 # key-step
-Key-Step is best described as "DDR with a keyboard on the web."
+Key-Step is best described as "Bad DDR Clone with a keyboard on the web."
 
 ## [Play the working Beta now!](https://prydt.github.io/key-step/)
 
