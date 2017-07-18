@@ -13,11 +13,18 @@ var ctx = canvas.getContext('2d')
 // 3 - right
 var pressed = [false, false, false, false]
 
+// list of notes for after-death analysis (TODO)
 var notes = new NoteList()
+
+// the beginning time
+var begin
+
 
 // the inital function
 function init() {
     clear()
+
+    begin = Date.now()
 
     ctx.font="55px Source Code Pro"
     ctx.fillStyle = '#fff'
@@ -158,9 +165,18 @@ function toggle(e, bool) {
 
 // draws all graphics to the screen
 function draw() {
+    // draws top arrows
     drawArrows()
+
+    // draws lines that show where notes can be 'hit'
     drawLine()
+
+    // draws all the incoming notes
     notes.draw()
+
+    // draws timer in corner of screen
+    var time = new Date(Math.abs(begin - Date.now()))
+    document.getElementById("timer").innerHTML = time.getMinutes() + ':' + time.getSeconds() + ':' + time.getMilliseconds()
 }
 
 const HIT_COLOR = '#f00'

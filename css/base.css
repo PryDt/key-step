@@ -1,5 +1,4 @@
-body
-{
+body {
     margin: 0px;
     padding: 0px;
     background: #000;
@@ -8,23 +7,25 @@ body
     font-family: 'Source Code Pro', monospace;
 }
 
-#container
-{
+#container {
     width: 100%;
     text-align: center;
 }
 
-#game
-{
+#game {
     /* centering the canvas */
-    padding-top: 30px;
+    /*padding-top: 30px;*/
     display: inline;
     border: 1px solid #fff
 }
 
-#copy
-{
+#timer {
     color: #fff;
+    display: block;
     text-align: center;
-    margin: 0px;
+}
+
+#copy {
+    color: #fff;
+    display: inline-block;
 }
